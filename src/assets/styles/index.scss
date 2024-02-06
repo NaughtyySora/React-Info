@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500&display=swap");
+
+* {
+  margin: 0;
+  left: 0;
+  box-sizing: border-box;
+  font-family: "Readex Pro", sans-serif;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --black_1: #2d2c2c;
+  --blue: rgba(28, 131, 227, 0.972);
+  --green: #0dce90;
+  --red: #ff3263;
+
+  --fSize36: 2.25rem;
+  --fSize24: 1.5rem;
+  --fSize20: 1.25rem;
+  --fSize16: 1rem;
+  --fSize14: 0.875rem;
+  --fSize12: 0.75rem;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--black_1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  padding: 2.5rem 0;
+  margin: 0 auto;
+  max-width: 90%;
+  width: 100%;
+
+  &-preview {
+    &:first-child {
+      font-size: var(--fSize36);
+    }
+    
+    margin-bottom: 2rem;
+
+    &-sub {
+      margin: 1rem 0;
+    }
+  }
+}
+
+.List {
+  border: 2px solid var(--blue);
+  margin: 0.5rem 0;
+  &-item {
+    color: var(--blue);
+  }
+}
